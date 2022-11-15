@@ -1,6 +1,6 @@
 # Лэндинг
 
-Страница выложена на [Vercel](https://university-choose-game.vercel.app/index.html)
+Страница выложена на [Vercel](https://landing-relvise.vercel.app/)
 
 ## Дополнительно
 
