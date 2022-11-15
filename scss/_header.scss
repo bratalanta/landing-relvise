@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 50;
+
+    &__container {
+        min-height: 104px;
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        font-weight: 700;
+        font-size: 24px;
+        // Ссылки не наследуют шрифт автоматически
+        color: inherit;
+
+        &:hover {
+            transform: scale(0.98);
+        }
+    }
+    &__menu {
+        margin-left: 133px;
+
+        @media(max-width: $tablet) {
+            margin-left: 70px;
+        }
+    }
+}
+.menu {
+    &__item {
+        &:not(:last-child) {
+            margin-right: 21px;
+        }
+    }
+    &__link {
+        font-weight: 600;
+        line-height: 24px / $default-fsize * 100%;
+        color: $grey;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

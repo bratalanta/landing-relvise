@@ -1,0 +1,119 @@
+@import '_var.scss';
+@import '_null.scss';
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: $default-fsize;
+    color: $default-color;
+    font-weight: 500;
+    font-family: Montserrat;
+    background-color: #FAFAFA;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1046px;
+    margin: 0 auto;
+
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+//ТЕХНИЧЕСКИЙ КЛАСС ДЛЯ ФОНОВЫХ ИЗОБРАЖЕНИЙ
+.ibg {
+    position: relative;
+}
+
+.ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.page {
+    flex: 1 1 auto;
+
+    &__main-block {
+        position: relative;
+    }
+
+    &__services {
+        margin-top: -111px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__advantages {
+        padding: 80px 0;
+
+        @media (max-width: $mini) {
+            padding: 50px 0;
+        }
+    }
+
+    &__practice {
+        padding: 80px 0;
+    }
+
+    &__whoweare {
+        padding-bottom: 136px;
+        background-color: $white
+    }
+
+    &__clients {
+        padding: 50px 0;
+    }
+
+    &__subscribe {
+        padding: 20px 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 77px;
+            background-color: $default-color;
+        }
+    }
+
+    &__get-in-touch {
+        padding: 80px 0;
+
+        @media (max-width: $mini) {
+            padding: 60px 0;
+        }
+    }
+
+    &__contact {
+        background-color: $white
+    }
+}
+
+@import '_header.scss';
+@import '_main-block.scss';
+@import '_services.scss';
+@import '_advantages.scss';
+@import '_practice.scss';
+@import '_whoweare.scss';
+@import '_clients.scss';
+@import '_subscribe.scss';
+@import '_getintouch.scss';
+@import '_contact.scss';
+@import '_footer.scss';
+
+
+
+
